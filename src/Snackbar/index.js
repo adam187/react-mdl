@@ -20,7 +20,7 @@ const defaultProps = {
     timeout: 2750
 };
 
-class Snackbar extends React.Component {
+class Snackbar extends React.PureComponent {
     constructor(props) {
         super(props);
         this.clearTimer = this.clearTimer.bind(this);

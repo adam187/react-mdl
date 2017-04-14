@@ -11,7 +11,7 @@ const propTypes = {
     progress: PropTypes.number
 };
 
-class ProgressBar extends React.Component {
+class ProgressBar extends React.PureComponent {
     componentDidMount() {
         this.setProgress(this.props.progress);
         this.setBuffer(this.props.buffer);

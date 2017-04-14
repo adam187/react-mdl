@@ -26,7 +26,7 @@ const propTypes = {
     ])
 };
 
-class Textfield extends React.Component {
+class Textfield extends React.PureComponent {
     componentDidMount() {
         if (this.props.error && !this.props.pattern) {
             this.setAsInvalid();

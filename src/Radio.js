@@ -17,7 +17,7 @@ const propTypes = {
     ]).isRequired
 };
 
-class Radio extends React.Component {
+class Radio extends React.PureComponent {
     componentDidUpdate(prevProps) {
         if (this.props.disabled !== prevProps.disabled) {
             const fnName = this.props.disabled ? 'disable' : 'enable';

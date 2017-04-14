@@ -9,7 +9,7 @@ const propTypes = {
 };
 
 // eslint-disable-next-line react/prefer-stateless-function
-class Spinner extends React.Component {
+class Spinner extends React.PureComponent {
     render() {
         const { className, singleColor, ...otherProps } = this.props;
 

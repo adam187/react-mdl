@@ -48,7 +48,7 @@ describe('Layout', () => {
             };
 
             // eslint-disable-next-line react/prefer-stateless-function
-            class MDLWrapper extends React.Component {
+            class MDLWrapper extends React.PureComponent {
                 render() {
                     return (
                         <HeaderTabs activeTab={0} onChange={cb}>

@@ -13,7 +13,7 @@ const defaultProps = {
     onCancel: e => e.preventDefault()
 };
 
-class Dialog extends React.Component {
+class Dialog extends React.PureComponent {
     componentDidMount() {
         this.dialogRef.addEventListener('cancel', this.props.onCancel);
         if (this.props.open) {

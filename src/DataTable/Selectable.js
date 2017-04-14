@@ -27,7 +27,7 @@ const defaultProps = {
 };
 
 export default Component => {
-    class Selectable extends React.Component {
+    class Selectable extends React.PureComponent {
         constructor(props) {
             super(props);
 

@@ -13,7 +13,7 @@ const defaultProps = {
     activeTab: 0
 };
 
-class TabBar extends React.Component {
+class TabBar extends React.PureComponent {
     constructor(props) {
         super(props);
 

@@ -11,7 +11,7 @@ const propTypes = {
 };
 
 // eslint-disable-next-line react/prefer-stateless-function
-class Layout extends React.Component {
+class Layout extends React.PureComponent {
     render() {
         const { className, fixedDrawer, fixedHeader, fixedTabs, ...otherProps } = this.props;
 

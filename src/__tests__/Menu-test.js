@@ -39,7 +39,7 @@ describe('Menu', () => {
     it('should unmount cleanly', () => {
         let removeMenuCallback;
 
-        class Testbed extends React.Component {
+        class Testbed extends React.PureComponent {
             constructor(props, ctx) {
                 super(props, ctx);
 

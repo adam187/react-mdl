@@ -19,7 +19,7 @@ const propTypes = {
 };
 
 // eslint-disable-next-line react/prefer-stateless-function
-class Button extends React.Component {
+class Button extends React.PureComponent {
     render() {
         const { accent, className, colored,
             primary, raised, ripple, component, href,

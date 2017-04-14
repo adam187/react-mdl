@@ -12,7 +12,7 @@ const propTypes = {
     value: PropTypes.number
 };
 
-class Slider extends React.Component {
+class Slider extends React.PureComponent {
     componentDidUpdate() {
         if (typeof this.props.value !== 'undefined') {
             findDOMNode(this).MaterialSlider.change(this.props.value);

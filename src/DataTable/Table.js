@@ -22,7 +22,7 @@ const propTypes = {
     shadow: PropTypes.number
 };
 
-class Table extends React.Component {
+class Table extends React.PureComponent {
     renderCell(column, row, idx) {
         const className = !column.numeric ? 'mdl-data-table__cell--non-numeric' : '';
         return (

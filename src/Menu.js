@@ -18,7 +18,7 @@ const defaultProps = {
 };
 
 // eslint-disable-next-line react/prefer-stateless-function
-class Menu extends React.Component {
+class Menu extends React.PureComponent {
     componentDidMount() {
         window.componentHandler.upgradeElements(findDOMNode(this));
     }

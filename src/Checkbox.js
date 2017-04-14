@@ -13,7 +13,7 @@ const propTypes = {
     ripple: PropTypes.bool
 };
 
-class Checkbox extends React.Component {
+class Checkbox extends React.PureComponent {
     componentDidUpdate(prevProps) {
         if (this.props.disabled !== prevProps.disabled) {
             const fnName = this.props.disabled ? 'disable' : 'enable';

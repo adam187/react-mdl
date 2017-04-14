@@ -25,7 +25,7 @@ const propTypes = {
 };
 
 export default Component => {
-    class Sortable extends React.Component {
+    class Sortable extends React.PureComponent {
         constructor(props) {
             super(props);
 

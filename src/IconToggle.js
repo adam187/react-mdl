@@ -14,7 +14,7 @@ const propTypes = {
     ripple: PropTypes.bool
 };
 
-class IconToggle extends React.Component {
+class IconToggle extends React.PureComponent {
     componentDidUpdate(prevProps) {
         if (this.props.disabled !== prevProps.disabled) {
             const fnName = this.props.disabled ? 'disable' : 'enable';

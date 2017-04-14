@@ -1,8 +1,8 @@
-import { Children, Component } from 'react';
+import { Children, PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import { findDOMNode } from 'react-dom';
 
-export default class MDLComponent extends Component {
+export default class MDLComponent extends PureComponent {
     componentDidMount() {
         if (this.props.recursive) {
             window.componentHandler.upgradeElements(findDOMNode(this));
